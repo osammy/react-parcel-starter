@@ -13,7 +13,15 @@ function SayGoodBye() {
 const btnStyle = {
   background:"red",
   color:"#fff",
-  borderRadius:"5px"
+  borderRadius:"5px",
+  padding:"20px"
+}
+
+const btnStyle2 = {
+  background:"green",
+  color:"#fff",
+  borderRadius:"5px",
+  padding:"20px"
 }
 
 const btnValue = "Submit";
@@ -31,6 +39,12 @@ ReactDOM.render(
       buttonStyle={btnStyle}
       buttonValue={btnValue}
     />
+
+    <Button
+          handleClick={handleBtnClick}
+          buttonStyle={btnStyle2}
+          buttonValue={btnValue}
+      />
   </div>,
   document.getElementById("root")
 );
