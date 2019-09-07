@@ -24,6 +24,12 @@ const btnStyle2 = {
   padding:"20px"
 }
 
+const selectStyle = {
+  width:"100px",
+  padding:"10px 30px",
+  border:"2px solid black"
+}
+
 const btnValue = "Submit";
 
 const handleBtnClick = () => {
@@ -45,10 +51,7 @@ ReactDOM.render(
           buttonStyle={btnStyle2}
           buttonValue={btnValue}
       />
-      <select>
-        <option>1</option>
-        <option>2</option>
-      </select>
+      <Select handleChange={handleChange} style={selectStyle} />
   </div>,
   document.getElementById("root")
 );
