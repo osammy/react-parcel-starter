@@ -2,8 +2,8 @@ import React from 'react';
 
 
 export const Button = (props) => {
-    // cons { handleClick }
+    const { handleClick, buttonStyle, buttonValue } = props; 
     return <div>
-                <button>My Button</button>
+                <button style={buttonStyle} onClick={handleClick}>{buttonValue}</button>
             </div>
 }
