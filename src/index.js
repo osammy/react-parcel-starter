@@ -42,6 +42,9 @@ const handleBtnClick = () => {
   alert("button was clicked");
 };
 
+const optionsforSelect = ["mango","orange","pear"];
+
+
 ReactDOM.render(
   <div>
     <SayHello name="Tope" />
@@ -57,7 +60,7 @@ ReactDOM.render(
           buttonStyle={btnStyle2}
           buttonValue={btnValue}
       />*/}
-      <Select handleChange={handleChange} selectStyle={selectStyle} />
+      <Select handleChange={handleChange} selectStyle={selectStyle} selectoptions={optionsforSelect} />
   </div>,
   document.getElementById("root")
 );
